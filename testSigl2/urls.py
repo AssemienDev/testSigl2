@@ -20,7 +20,7 @@ from django.urls import path
 import esatictest
 
 urlpatterns = [
-    #path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('', esatictest.views.index, name='index'),
 ]
 
