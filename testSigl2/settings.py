@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 
 from pathlib import Path
 import os
+import pymysql
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,6 +28,9 @@ SECRET_KEY = 'django-insecure-00)brpgc%5biodw$i1!l=39nfah(@-jhm^ktx2^u2hy)#yaomz
 DEBUG = False
 
 ALLOWED_HOSTS = ['13.48.29.131']
+
+
+pymysql.install_as_MySQLdb()
 
 
 # Application definition
